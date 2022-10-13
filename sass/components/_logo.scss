@@ -1,0 +1,26 @@
+.header {
+    &__container-logo {
+        margin-right: 93px;
+    }
+}
+
+.footer {
+    &__container-logo {
+        margin-bottom: 20px;
+    }
+}
+
+.logo {
+    @include fonts (700, 26px, 1.17);
+    font-family: 'Raleway', sans-serif;
+
+    color: $second-text-color;
+
+    &__label {
+        color: $hyper-link-color;
+
+        &--white {
+            color: $white-color;
+        }
+    }
+}

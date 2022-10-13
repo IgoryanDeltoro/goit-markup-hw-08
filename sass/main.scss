@@ -1,0 +1,38 @@
+@import "utils/variables";
+@import "utils/mixin";
+@import "base/general";
+@import "base/reset";
+@import "utils/hidden";
+@import "utils/placeholder";
+
+
+// header
+@import "components/header/header-container";
+@import "components/logo";
+@import "components/header/navigation";
+@import "components/header/contacts";
+
+// main-page
+@import "components/main-page/hero";
+@import "components/main-page/features";
+@import "components/main-page/what-we-do";
+@import "components/main-page/team";
+@import "components/main-page/customers";
+
+// next-page portfolio
+@import "components/portfolio/portfolio-container";
+@import "components/portfolio/filter";
+@import "components/portfolio/project";
+
+// footer
+@import "components/footer/footer-container";
+@import "components/footer/address";
+@import "components/footer/social";
+@import "components/footer/sing-up";
+
+
+
+// modal
+@import "components/modal/modal";
+@import "components/modal/modal-form";
+@import "components/modal/policy";

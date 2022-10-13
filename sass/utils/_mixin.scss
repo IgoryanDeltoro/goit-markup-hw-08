@@ -1,0 +1,32 @@
+@mixin section-padding ($pt, $pr, $pb, $pl, ) {
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+}
+
+// fonts title h2
+
+@mixin fonts ($fw, $fs, $lh) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+// display position 
+
+@mixin display ($f, $jc, $ai) {
+    display: $f;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+// transition 
+@mixin single-transition ($variable) {
+    transition: $variable $transition-time $transition-cubic
+}
+
+@mixin double-transition ($variable-first, $variable-second ) {
+    transition: $variable-first $transition-time $transition-cubic,
+        $variable-second $transition-time $transition-cubic;
+}

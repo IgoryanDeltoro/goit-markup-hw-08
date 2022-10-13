@@ -1,0 +1,71 @@
+.backdrop-box {
+    @include single-transition (opacity);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    opacity: 1;
+    overflow-y: auto;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    &--is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+
+        .modal {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+    }
+}
+
+.modal {
+    @include single-transition (transform);
+    transform: translate(-50%, -50%) scale(1);
+
+    z-index: 3;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+
+    width: 528px;
+    height: 581px;
+
+    background-color: $main-bgc-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.close-button {
+    @include single-transition (border-color);
+    @include display (flex, center, center);
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $main-bgc-color;
+
+    cursor: pointer;
+
+    &:hover {
+        fill: $accent-focus-color;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}

@@ -1,0 +1,7 @@
+.header {
+    border-bottom: 1px solid $border-color;
+}
+
+.header__container {
+    @include display (flex, center, center);
+}

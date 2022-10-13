@@ -1,0 +1,56 @@
+.social-box {
+    margin-left: 70px;
+}
+
+.social-box__title {
+    @include fonts (700, 14px, 1.17);
+
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    color: $white-color;
+}
+
+.social {
+    @include display (flex, center, center);
+    gap: 10px;
+}
+
+.social__item {
+    @include display (flex, center, center);
+}
+
+.social__link {
+    @include display (flex, center, center);
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.social__icon {
+    &--white {
+        fill: $white-color;
+    }
+
+}
+
+.social__link {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-focus-color;
+    }
+
+    &:active {
+        background-color: $accent-focus-color;
+    }
+}

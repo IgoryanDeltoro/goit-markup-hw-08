@@ -1,0 +1,57 @@
+.container-nav {
+    @include display (flex, center, center);
+}
+
+.navigation {
+    @include display (flex, center, center);
+}
+
+.navigation__item {
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.navigation__link {
+    @include fonts (500, 14px, 1.1);
+    padding: 32px 0;
+    letter-spacing: 0.02em;
+    color: $second-text-color;
+}
+
+.navigation__link {
+    &--current {
+        color: $accent-focus-color;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+
+            content: ' ';
+
+            width: 100%;
+            height: 4px;
+
+            border-radius: 2px;
+            background-color: $accent-focus-color;
+        }
+    }
+
+
+}
+
+.navigation__link {
+
+    &:hover,
+    &:focus {
+        color: $accent-focus-color;
+    }
+
+    &:active {
+        color: $accent-focus-color;
+    }
+}

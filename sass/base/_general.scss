@@ -1,0 +1,26 @@
+body {
+  background-color: $main-bgc-color;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
+}
+
+img {
+  display: block;
+}
+
+a {
+  @include double-transition (color, background-color);
+}
+
+svg {
+  @include double-transition (fill, background-color);
+}
