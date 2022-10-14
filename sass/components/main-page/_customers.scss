@@ -3,8 +3,8 @@
 }
 
 .customers__list {
-    @include display (flex, center, center);
-    gap: 30px;
+    // @include display (flex, center, center);
+    // gap: 30px;
 
 }
 
@@ -16,7 +16,7 @@
 }
 
 .customers__link {
-    @include display (flex, center, center);
+    // @include display (flex, center, center);
     @include single-transition (border-color);
 
     width: 170px;

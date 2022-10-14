@@ -1,19 +1,19 @@
 .cont-list {
-    @include display (flex, center, center);
-    margin-left: auto;
+    // @include display (flex, center, center);
+    // margin-left: auto;
 }
 
 .cont-list__item {
-    margin-right: 50px;
+    // margin-right: 50px;
 
-    &:last-child {
-        margin-right: 0;
-    }
+    // &:last-child {
+    //     margin-right: 0;
+    // }
 }
 
 .cont-list__link {
     @include fonts (500, 14px, 1.1);
-    @include display (flex, center, center);
+    // @include display (flex, center, center);
 
     padding: 32px 0;
 

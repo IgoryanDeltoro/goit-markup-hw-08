@@ -7,14 +7,10 @@ body {
   color: $main-text-color;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 1200px;
-}
-
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
