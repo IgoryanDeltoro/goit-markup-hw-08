@@ -1,3 +1,7 @@
 .portfolio {
-    @include section-padding (94px, 0, 94px, 0);
+    @include section-padding (60px, 0, 60px, 0);
+
+    @include desktop {
+        @include section-padding (94px, 0, 94px, 0);
+    }
 }

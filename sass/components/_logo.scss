@@ -1,7 +1,27 @@
 .header {
-    &__container-logo {
+    border-bottom: 1px solid $border-color;
+
+    @include max-width (767px) {
+        height: 60px;
+    }
+
+    @include tablet {
+        height: 80px;
+    }
+
+}
+
+.header__container-logo {
+    @include max-width (767px) {}
+
+    @include min-max-width (768px, 1199px) {
+        margin-right: 88px;
+    }
+
+    @include desktop {
         margin-right: 93px;
     }
+
 }
 
 .footer {

@@ -1,0 +1,32 @@
+.menu-btn {
+    position: absolute;
+    display: inline-flex;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    border-color: transparent;
+
+    .icon-close {
+        display: none;
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+}
+
+.icon-close {
+    .menu-btn.is-open & {
+        display: block;
+    }
+}
+
+.icon-menu {
+    .menu-btn.is-open & {
+        display: none;
+    }
+}

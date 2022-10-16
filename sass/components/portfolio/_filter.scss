@@ -1,6 +1,20 @@
 .filter__list {
-    @include display (flex, center, center);
+    display: flex;
+    flex-wrap: wrap;
     gap: 8px;
+
+    @include tablet {
+        justify-content: center;
+    }
+
+}
+
+.filter__item {
+    @include max-width (767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .container__filter {

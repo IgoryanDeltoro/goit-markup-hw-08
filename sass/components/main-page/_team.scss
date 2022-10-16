@@ -2,7 +2,7 @@
     @include section-padding (60px, 0, 60px, 0);
     background-color: $third-bgc-color;
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         @include section-padding (94px, 0, 94px, 0);
     }
 }
@@ -16,7 +16,7 @@
 
 .team__list {
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -32,34 +32,22 @@
 
     background-color: $main-bgc-color;
 
-    @media screen and (max-width: 767px) {
+    @include max-width (767px) {
         &:not(:last-child) {
             margin-bottom: 30px;
         }
     }
 
-    @media screen and (min-width: 768px) {
-        max-width: calc((100% / 2) - 30px);
+    @include tablet {
+        flex-basis: calc((100% - 30px) / 2);
     }
 
-    @media screen and (min-width: 1200px) {
-        max-width: calc((100% / 4) - 30px);
+    @include desktop {
+        flex-basis: calc((100% - 3 * 30px) / 4);
     }
 }
 
-.team__img {
-    // @media screen and (min-width: 768px) {
-    //     & {
-    //         max-width: 354px;
-    //     }
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     & {
-    //         max-width: 270px;
-    //     }
-    // }
-}
+.team__img {}
 
 .team__box {
     padding-bottom: 30px;

@@ -1,25 +1,47 @@
 .cont-list {
-    // @include display (flex, center, center);
-    // margin-left: auto;
+    display: none;
+
+    @include tablet {
+        display: block;
+        margin-left: auto;
+    }
+
+    @include desktop {
+        @include display (flex, center, center);
+
+    }
 }
 
 .cont-list__item {
-    // margin-right: 50px;
 
-    // &:last-child {
-    //     margin-right: 0;
-    // }
+    @include min-max-width (768px, 1199px) {
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    @include desktop {
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+
 }
 
 .cont-list__link {
     @include fonts (500, 14px, 1.1);
-    // @include display (flex, center, center);
-
-    padding: 32px 0;
 
     text-decoration: none;
     letter-spacing: 0.02em;
     color: $main-text-color;
+
+    @include tablet {
+        @include display (flex, start, center);
+    }
+
+    @include desktop {
+        padding: 32px 0;
+    }
 }
 
 .cont-list__link {
@@ -37,4 +59,9 @@
 .cont-list__icon {
     margin-right: 10px;
     --fill-of-icon: currentColor;
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
 }

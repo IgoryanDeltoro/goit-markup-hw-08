@@ -1,7 +1,13 @@
-.header {
-    border-bottom: 1px solid $border-color;
-}
-
 .header__container {
-    // @include display (flex, center, center);
+    height: 100%;
+    position: relative;
+
+    @include max-width (767px) {
+        @include display (flex, space-between, center);
+    }
+
+    @include tablet {
+        @include display (flex, center, center);
+    }
+
 }

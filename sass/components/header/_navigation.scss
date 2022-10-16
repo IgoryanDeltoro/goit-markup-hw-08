@@ -1,17 +1,27 @@
 .container-nav {
-    // @include display (flex, center, center);
+    @include tablet {
+        @include display (flex, center, center);
+    }
 }
 
 .navigation {
-    // @include display (flex, center, center);
+    display: none;
+
+    @include tablet {
+        @include display (flex, center, center);
+    }
 }
 
 .navigation__item {
-    // margin-right: 50px;
 
-    &:last-child {
-        // margin-right: 0;
+    @include tablet {
+        margin-right: 50px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
+
 }
 
 .navigation__link {
