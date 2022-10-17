@@ -1,5 +1,8 @@
 .cont-list {
-    display: none;
+    @include max-width (767px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
     @include tablet {
         display: block;
@@ -13,6 +16,11 @@
 }
 
 .cont-list__item {
+    @include max-width (767px) {
+        &:last-child {
+            margin-bottom: 32px;
+        }
+    }
 
     @include min-max-width (768px, 1199px) {
         &:first-child {
@@ -28,18 +36,29 @@
 
 }
 
-.cont-list__link {
-    @include fonts (500, 14px, 1.1);
 
-    text-decoration: none;
+
+.cont-list__link {
     letter-spacing: 0.02em;
     color: $main-text-color;
+    @include display (flex, flex-start, center);
 
-    @include tablet {
-        @include display (flex, start, center);
+    @include max-width (767px) {
+        @include fonts (500, 24px, 1.16);
+
+        &--size {
+            @include fonts (500, 34px, 1.17);
+            color: $hyper-link-color;
+        }
+    }
+
+    @include min-max-width (768px, 1199px) {
+        @include fonts (500, 12px, 1.17);
+
     }
 
     @include desktop {
+        @include fonts (500, 14px, 1.1);
         padding: 32px 0;
     }
 }

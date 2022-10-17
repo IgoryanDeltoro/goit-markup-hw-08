@@ -1,0 +1,31 @@
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 64px;
+    @include fonts (500, 18px, 1.2);
+    letter-spacing: 0.02em;
+    color: $hyper-link-color;
+    display: inline-flex;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.social-list__item {
+    padding-right: 10px;
+
+    &:not(:last-child)::after {
+        padding-left: 10px;
+        content: "";
+        border-right: 1px solid rgba(33, 33, 33, .2);
+    }
+
+}
+
+.social-list__link {
+    @include fonts (500, 18px, 1.2);
+    letter-spacing: 0.02em;
+    color: $hyper-link-color;
+}

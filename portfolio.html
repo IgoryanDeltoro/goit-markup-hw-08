@@ -2,54 +2,67 @@
 <html lang="uk">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/main.min.css" />
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body>
+<body data-body>
   <!-- header -->
   <header class="header">
     <div class="container header__container">
-      <nav class="container-nav">
-        <div class="container-logo header__container-logo">
-          <a href="./index.html" class="logo"> <span class="logo__label">Web</span>Studio </a>
-        </div>
-        <ul class="navigation">
-          <li class="navigation__item">
-            <a href="./index.html" class="navigation__link ">Студія</a>
+      <div class="container-logo header__container-logo">
+        <a href="./index.html" class="logo"> <span class="logo__label">Web</span>Studio </a>
+      </div>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-box" data-menu-button>
+        <svg width="40" height="40" aria-label="переключатель мобильного меню">
+          <use class="icon-menu" href="./images/svg-sprite/sprite.svg#icon-menu"></use>
+          <use class="icon-close" href="./images/svg-sprite/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="menu-container" id="menu-box" data-menu>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link">Студія</a>
+            </li>
+            <li class="navigation__item"><a href="./portfolio.html"
+                class="navigation__link navigation__link--current">Портофоліо</a></li>
+            <li class="navigation__item"><a href="" class="navigation__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="cont-list">
+          <li class="cont-list__item">
+            <a href="mailto:info@devstudio.com" class="cont-list__link"><svg class="cont-list__icon" width="16"
+                height="12">
+                <use href="./images/svg-sprite/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
-          <li class="navigation__item"><a href="./portfolio.html"
-              class="navigation__link navigation__link--current">Портофоліо</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link ">Контакти</a></li>
+          <li class="cont-list__item">
+            <a href="tel:+380961111111" class="cont-list__link cont-list__link--size">
+              <svg class="cont-list__icon" width="12" height="16">
+                <use href="./images/svg-sprite/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
-      </nav>
-      <ul class="cont-list">
-        <li class="cont-list__item">
-          <a href="mailto:info@devstudio.com" class="cont-list__link"><svg class="cont-list__icon" width="16"
-              height="12">
-              <use href="./images/svg-sprite/sprite.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="cont-list__item">
-          <a href="tel:+380961111111" class="cont-list__link">
-            <svg class="cont-list__icon" width="12" height="16">
-              <use href="./images/svg-sprite/sprite.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+        <ul class="social-list">
+          <li class="social-list__item"><a class="social-list__link" href="">Instagram</a></li>
+          <li class="social-list__item"><a class="social-list__link" href="">Twitter</a></li>
+          <li class="social-list__item"><a class="social-list__link" href=""></a>Facebook</li>
+          <li class="social-list__item"><a class="social-list__link" href=""></a>LinkedIn</li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
@@ -72,7 +85,7 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="container__img">
-                <img src="./images/portfoilio-img/img.jpg" class="project__img" alt="лептоп" />
+                <img src="./images/portfoilio-img/img.jpg" class="project__img" alt="лептоп">
                 <div class="container__hidden">
                   <p class="project__description">
                     Ресурс project__пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -90,7 +103,7 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="container__img">
-                <img src="./images/portfoilio-img/img1.jpg" class="project__img" alt="гравці з баскетболу" />
+                <img src="./images/portfoilio-img/img1.jpg" class="project__img" alt="гравці з баскетболу">
                 <div class="container__hidden">
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -108,7 +121,7 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="container__img">
-                <img src="./images/portfoilio-img/img2.jpg" class="project__img" alt="торгова марка" />
+                <img src="./images/portfoilio-img/img2.jpg" class="project__img" alt="торгова марка">
                 <div class="container__hidden">
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -126,7 +139,7 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="container__img">
-                <img src="./images/portfoilio-img/img3.jpg" class="project__img" alt="навушники" />
+                <img src="./images/portfoilio-img/img3.jpg" class="project__img" alt="навушники">
                 <div class="container__hidden">
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -144,7 +157,7 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="container__img">
-                <img src="./images/portfoilio-img/img4.jpg" class="project__img" alt="дві коробки" />
+                <img src="./images/portfoilio-img/img4.jpg" class="project__img" alt="дві коробки">
                 <div class="container__hidden">
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -162,7 +175,7 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="container__img">
-                <img src="./images/portfoilio-img/img5.jpg" class="project__img" alt="моноблок" />
+                <img src="./images/portfoilio-img/img5.jpg" class="project__img" alt="моноблок">
                 <div class="container__hidden">
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -180,7 +193,7 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="container__img">
-                <img src="./images/portfoilio-img/img6.jpg" class="project__img" alt="журнал" />
+                <img src="./images/portfoilio-img/img6.jpg" class="project__img" alt="журнал">
                 <div class="container__hidden">
                   <p class="project__description">
                     Ресурс project__пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -198,7 +211,7 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="container__img">
-                <img src="./images/portfoilio-img/img7.jpg" class="project__img" alt="етикетка" />
+                <img src="./images/portfoilio-img/img7.jpg" class="project__img" alt="етикетка">
                 <div class="container__hidden">
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -216,7 +229,7 @@
           <li class="project__item">
             <a href="" class="project__link">
               <div class="container__img">
-                <img src="./images/portfoilio-img/img8.jpg" class="project__img" alt="праця на лептопі" />
+                <img src="./images/portfoilio-img/img8.jpg" class="project__img" alt="праця на лептопі">
                 <div class="container__hidden">
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -308,6 +321,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

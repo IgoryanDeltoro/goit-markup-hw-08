@@ -1,13 +1,5 @@
 .header__container {
     height: 100%;
     position: relative;
-
-    @include max-width (767px) {
-        @include display (flex, space-between, center);
-    }
-
-    @include tablet {
-        @include display (flex, center, center);
-    }
-
+    @include display (flex, flex-start, center);
 }

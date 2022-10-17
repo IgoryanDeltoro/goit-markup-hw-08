@@ -12,7 +12,7 @@
 }
 
 .header__container-logo {
-    @include max-width (767px) {}
+    display: inline-block;
 
     @include min-max-width (768px, 1199px) {
         margin-right: 88px;
