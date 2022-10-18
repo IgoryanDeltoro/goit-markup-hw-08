@@ -1283,12 +1283,22 @@ ul {
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close-button {
@@ -1341,6 +1351,11 @@ ul {
   line-height: 1.15;
   margin-bottom: 12px;
   color: #212121;
+}
+@media screen and (max-width: 1199px) {
+  .form__title {
+    text-align: center;
+  }
 }
 
 .form__list {
@@ -1494,7 +1509,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .policy__checkbox-hidden {
@@ -1507,6 +1521,13 @@ ul {
 .policy__title {
   margin-left: 9px;
 }
+@media screen and (max-width: 1199px) {
+  .policy__title {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
+}
 
 .policy__icon {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1515,11 +1536,9 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-  top: 50%;
   left: 12px;
-  -webkit-transform: translateY(-50%) scale(1);
-          transform: translateY(-50%) scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   border: 2px solid #000000;
   border-radius: 2px;
   background-origin: border-box;
@@ -1527,12 +1546,12 @@ ul {
 .policy__checkbox-hidden:checked + .policy__icon {
   border-color: #2196f3;
   background-color: #2196f3;
-  -webkit-transform: translateY(-50%) scale(1.1);
-          transform: translateY(-50%) scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .policy__checkbox-hidden:hover + .policy__icon, .policy__checkbox-hidden:focus + .policy__icon {
-  -webkit-transform: translateY(-50%) scale(1.1);
-          transform: translateY(-50%) scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .policy__link {

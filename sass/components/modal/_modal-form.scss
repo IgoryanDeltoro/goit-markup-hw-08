@@ -9,6 +9,10 @@
     @include fonts (700, 20px, 1.15);
     margin-bottom: 12px;
     color: $second-text-color;
+
+    @include max-width (1199px) {
+        text-align: center;
+    }
 }
 
 .form__list {

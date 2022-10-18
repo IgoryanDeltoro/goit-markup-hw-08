@@ -1,6 +1,6 @@
 .policy {
     @include display (flex, center, center);
-    position: relative;
+
 }
 
 .policy__checkbox-hidden {
@@ -12,6 +12,12 @@
 
 .policy__title {
     margin-left: 9px;
+
+    @include max-width (1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+    }
 }
 
 .policy__icon {
@@ -19,10 +25,8 @@
     @include double-transition (transform,
         background-color);
 
-    position: absolute;
-    top: 50%;
     left: 12px;
-    transform: translateY(-50%) scale(1);
+    transform: scale(1);
     border: 2px solid $black-color;
     border-radius: 2px;
     background-origin: border-box;
@@ -31,12 +35,12 @@
     .policy__checkbox-hidden:checked+& {
         border-color: $accent-focus-color;
         background-color: $accent-focus-color;
-        transform: translateY(-50%) scale(1.1);
+        transform: scale(1.1);
     }
 
     .policy__checkbox-hidden:hover+&,
     .policy__checkbox-hidden:focus+& {
-        transform: translateY(-50%) scale(1.1);
+        transform: scale(1.1);
     }
 }
 
