@@ -1,5 +1,13 @@
 .social-box {
-    // margin-left: 70px;
+    @include max-width (1199px) {
+
+        margin-bottom: 60px;
+    }
+
+    @include desktop {
+        margin-left: 70px;
+
+    }
 }
 
 .social-box__title {
@@ -7,7 +15,7 @@
 
     margin-bottom: 20px;
     text-transform: uppercase;
-
+    text-align: center;
     color: $white-color;
 }
 

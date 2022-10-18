@@ -1,5 +1,8 @@
 .sign-up-box {
-    // margin-left: auto;
+
+    @include desktop {
+        margin-left: auto;
+    }
 }
 
 .sign-up-box__title {
@@ -7,18 +10,24 @@
 }
 
 .sign-up {
-    // @include display (flex, center, center);
+    @include min-max-width (768px, 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include desktop {
+        @include display (flex, center, center);
+    }
+
 }
 
 .sign-up__input {
     @include single-transition (border-color);
-
-    margin-right: 12px;
-    padding: 0 16px;
-    width: 358px;
-    height: 50px;
-
     outline: none;
+
+    height: 50px;
+    padding: 0 16px;
 
     font-size: 16px;
     line-height: 1.25;
@@ -29,14 +38,32 @@
     background: $footer-bgc;
     border: 1px solid rgba(255, 255, 255, 0.3);
 
-
     &:focus {
         border-color: $accent-focus-color;
+    }
+
+    @include max-width (767px) {
+        width: 100%;
+    }
+
+    @include max-width (1199px) {
+        margin-bottom: 20px;
+    }
+
+    @include min-max-width (768px, 1199px) {
+        width: 450px;
+    }
+
+    @include desktop {
+        margin-right: 12px;
+
+        width: 358px;
+
     }
 }
 
 .sign-up__btn {
-    @include display (flex, center, center);
+    @include display (inline-flex, center, center);
     @include fonts (700, 16px, 1.8);
     @include single-transition (color);
     @include double-transition (box-shadow,
@@ -50,6 +77,8 @@
     letter-spacing: .06em;
     color: $white-color;
     background-color: $hyper-link-color;
+
+    @include desktop {}
 }
 
 .sign-up__icon {

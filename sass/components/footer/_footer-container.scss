@@ -1,9 +1,25 @@
 .footer {
-    // padding: 60px 0;
+    padding: 60px 0;
     background-color: $footer-bgc;
+
 }
 
 .footer__container {
-    // display: flex;
-    // align-items: baseline;
+
+
+
+    @include tablet {
+        display: flex;
+    }
+
+    @include max-width (1199px) {
+        text-align: center;
+    }
+
+    @include min-max-width (767px, 1199px) {
+
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
 }

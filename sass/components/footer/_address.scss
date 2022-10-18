@@ -1,5 +1,13 @@
+.container-address {
+    @include max-width (1199px) {
+        margin-bottom: 60px;
+    }
+}
+
 .address_item:not(:last-child) {
-    // margin-bottom: 5px;
+    @include desktop {
+        margin-bottom: 5px;
+    }
 }
 
 .address__link {
