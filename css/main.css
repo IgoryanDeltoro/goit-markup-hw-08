@@ -471,20 +471,24 @@ ul {
 }
 
 .hero__title {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto 30px;
-  max-width: 360px;
+}
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    max-width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.35;
-    width: 696px;
+    max-width: 696px;
     color: #ffffff;
   }
 }
