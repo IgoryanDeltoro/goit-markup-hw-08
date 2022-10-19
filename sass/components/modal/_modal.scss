@@ -45,7 +45,7 @@
 
     @include max-width (1199px) {
         max-width: 450px;
-        height: 609px;
+        height: auto;
         width: calc(100% - 30px);
     }
 
