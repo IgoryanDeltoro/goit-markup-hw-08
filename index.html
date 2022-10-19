@@ -131,8 +131,11 @@
         <ul class="work__list">
           <li class="work__item">
             <div class="container__img">
-              <img class="work__img" src="./images/web-studio-img/box.jpg" alt="робота в офісі" width="370"
-                height="294">
+              <img srcset="
+                    ./images/web-studio-img/desktop-img/work1x.jpg 1x, 
+                    ./images/web-studio-img/desktop-img/work2x.jpg 2x, 
+                    ./images/web-studio-img/desktop-img/work3x.jpg 3x " type="image/jpg" class="work__img"
+                src="./images/we-studio-img/desktop-img/work1x.jpg" alt="робота в офісі" width="370">
               <div class="container__description">
                 <p class="work__description">Десктопні додатки</p>
               </div>
@@ -140,7 +143,11 @@
           </li>
           <li class="work__item">
             <div class="container__img">
-              <img class="work__img" src="./images/web-studio-img/img.jpg" alt="планування" width="370" height="294">
+              <img srcset="
+                    ./images/web-studio-img/desktop-img/work-1x.jpg 1x, 
+                    ./images/web-studio-img/desktop-img/work-2x.jpg 2x, 
+                    ./images/web-studio-img/desktop-img/work-3x.jpg 3x " type="image/jpg" class="work__img"
+                src="./images/web-studio-img/desktop-img/work-1x.jpg" alt="планування" width="370">
               <div class="container__description">
                 <p class="work__description">Мобільні додатки</p>
               </div>
@@ -148,8 +155,11 @@
           </li>
           <li class="work__item">
             <div class="container__img">
-              <img class="work__img" src="./images/web-studio-img/img1.jpg" alt="творчий художник веб-дизайну"
-                width="370" height="294">
+              <img srcset="
+                    ./images/web-studio-img/desktop-img/work--1x.jpg 1x, 
+                    ./images/web-studio-img/desktop-img/work--2x.jpg 2x, 
+                    ./images/web-studio-img/desktop-img/work--3x.jpg 3x " type="image/jpg" class="work__img"
+                src="./images/web-studio-img/desktop-img/work-1x.jpg" alt="творчий художник веб-дизайну" width="370">
               <div class="container__description">
                 <p class="work__description">Дизайнерські рішення</p>
               </div>
@@ -164,7 +174,19 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img class="team__img" src="./images/web-studio-img/photo.jpg" alt="фотопортрет">
+            <picture>
+              <source srcset="
+              ./images/web-studio-img/desktop-img/ihor-img-1x.jpg 1x,
+              ./images/web-studio-img/desktop-img/ihor-img-2x.jpg 2x " media="(min-width: 1200px)" type="image/jpg">
+              <source srcset="
+              ./images/web-studio-img/tablet-img/ihor-img-1x.jpg 1x,
+              ./images/web-studio-img/tablet-img/ihor-img-2x.jpg 2x " media="(min-width: 768px)" type="image/jpg">
+              <source srcset="
+              ./images/web-studio-img/mobile-img/ihor-img-1x.jpg 1x, 
+              ./images/web-studio-img/mobile-img/ihor-img-2x.jpg 2x " media="(max-width: 767px)" type="image/jpg">
+              <img class="team__img" src="./images/web-studio-img/mobile-img/ihor-img-1x.jpg 1x, " alt="фотопортрет"
+                width="450">
+            </picture>
             <div class="team__box">
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__description">Product Designer</p>
@@ -201,7 +223,19 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/web-studio-img/photo1.jpg" alt="фотопортрет">
+            <picture>
+              <source srcset="
+              ./images/web-studio-img/desktop-img/olga-img-1x.jpg 1x,
+              ./images/web-studio-img/desktop-img/olga-img-2x.jpg 2x " media="(min-width: 1200px)" type="image/jpg">
+              <source srcset="
+              ./images/web-studio-img/tablet-img/olga-img-1x.jpg 1x,
+              ./images/web-studio-img/tablet-img/olga-img-2x.jpg 2x " media="(min-width: 768px)" type="image/jpg">
+              <source srcset="
+              ./images/web-studio-img/mobile-img/olga-img-1x.jpg 1x, 
+              ./images/web-studio-img/mobile-img/olga-img-2x.jpg 2x " media="(max-width: 767px)" type="image/jpg">
+              <img class="team__img" src="./images/web-studio-img/mobile-img/olga-img-1x.jpg" alt="фотопортрет"
+                width="450">
+            </picture>
             <div class="team__box">
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__description">Frontend Developer</p>
@@ -238,7 +272,19 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/web-studio-img/photo2.jpg" alt="фотопортрет">
+            <picture>
+              <source srcset="
+              ./images/web-studio-img/desktop-img/nikolay-img-1x.jpg 1x,
+              ./images/web-studio-img/desktop-img/nikolay-img-2x.jpg 2x " media="(min-width: 1200px)" type="image/jpg">
+              <source srcset="
+              ./images/web-studio-img/tablet-img/nikolay-img-1x.jpg 1x,
+              ./images/web-studio-img/tablet-img/nikolay-img-2x.jpg 2x " media="(min-width: 768px)" type="image/jpg">
+              <source srcset="
+              ./images/web-studio-img/mobile-img/nikolay-img-1x.jpg 1x, 
+              ./images/web-studio-img/mobile-img/nikolay-img-2x.jpg 2x " media="(max-width: 767px)" type="image/jpg">
+              <img class="team__img" src="./images/web-studio-img/mobile-img/nikolay-img-1x.jpg" alt="фотопортрет"
+                width="450">
+            </picture>
             <div class="team__box">
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__description">Marketing</p>
@@ -275,7 +321,19 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/web-studio-img/photo3.jpg" alt="фотопортрет">
+            <picture>
+              <source srcset="
+              ./images/web-studio-img/desktop-img/michael-img-1x.jpg 1x,
+              ./images/web-studio-img/desktop-img/michael-img-2x.jpg 2x " media="(min-width: 1200px)" type="image/jpg">
+              <source srcset="
+              ./images/web-studio-img/tablet-img/michael-img-1x.jpg 1x,
+              ./images/web-studio-img/tablet-img/michael-img-2x.jpg 2x " media="(min-width: 768px)" type="image/jpg">
+              <source srcset="
+              ./images/web-studio-img/mobile-img/michael-img-1x.jpg 1x, 
+              ./images/web-studio-img/mobile-img/michael-img-2x.jpg 2x " media="(max-width: 767px)" type="image/jpg">
+              <img class="team__img" src="./images/web-studio-img/mobile-img/michael-img-1x.jpg" alt="фотопортрет"
+                width="450">
+            </picture>
             <div class="team__box">
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__description">UI Designer</p>
