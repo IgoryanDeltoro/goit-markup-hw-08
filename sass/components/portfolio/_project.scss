@@ -11,11 +11,13 @@
   @include max-width (767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
+
     }
   }
 
   @include min-max-width (768px, 1199px) {
     flex-basis: calc((100% - 30px) / 2);
+
   }
 
   @include desktop {
@@ -23,22 +25,26 @@
   }
 }
 
-.project__img {
-  width: 100%;
-}
-
 .container__card {
   padding: 20px 24px;
 
+  border-top: none;
   border-right: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
   border-left: 1px solid $border-color;
+
+  @include min-max-width (768px, 1199px) {
+    .project__item:first-child & {
+      height: 147px;
+    }
+  }
 }
 
 .project__link {
   @include single-transition (box-shadow);
-  height: 100%;
-  display: block;
+
+  display: flex;
+  flex-direction: column;
 
   &:hover,
   &:focus {
