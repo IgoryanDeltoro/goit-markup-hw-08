@@ -80,12 +80,22 @@
 }
 
 .project__description {
-  padding: 63px 24px;
-
   font-size: 18px;
-  line-height: 1.5;
-
+  line-height: 1.27;
   color: $white-color;
+
+  @include max-width (379px) {
+    padding: 0 10px;
+  }
+
+  @include min-max-width (380px, 479px) {
+    padding: 40px 10px;
+  }
+
+  @include mobile {
+    padding: 77px 24px;
+
+  }
 }
 
 .project__title {

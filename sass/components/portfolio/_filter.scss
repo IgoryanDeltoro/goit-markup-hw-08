@@ -9,19 +9,9 @@
 
 }
 
-.filter__item {
-    @include max-width (767px) {
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
-    }
-}
-
 .container__filter {
     margin-bottom: 50px;
 }
-
-
 
 .filter__btn {
     @include fonts (500, 16px, 1.6);

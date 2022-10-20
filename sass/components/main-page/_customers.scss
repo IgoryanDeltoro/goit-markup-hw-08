@@ -43,6 +43,8 @@
     @include display (flex, center, center);
     @include single-transition (border-color);
 
+    height: 92px;
+
     border: 1px solid $icon-color;
     border-radius: 4px;
 

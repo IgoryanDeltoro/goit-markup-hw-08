@@ -855,6 +855,7 @@ ul {
           align-items: center;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -903,12 +904,6 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .filter__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 
@@ -1027,10 +1022,24 @@ ul {
 }
 
 .project__description {
-  padding: 63px 24px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.27;
   color: #ffffff;
+}
+@media screen and (max-width: 379px) {
+  .project__description {
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 380px) and (max-width: 479px) {
+  .project__description {
+    padding: 40px 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .project__description {
+    padding: 77px 24px;
+  }
 }
 
 .project__title {
@@ -1112,7 +1121,6 @@ ul {
   line-height: 1.17;
   margin-bottom: 20px;
   text-transform: uppercase;
-  text-align: center;
   color: #ffffff;
 }
 
@@ -1585,19 +1593,24 @@ ul {
   border-radius: 2px;
   background-origin: border-box;
 }
-.policy__checkbox-hidden:checked + .policy__icon {
+.policy__checkbox-hidden:checked + .policy__label .policy__icon {
   border-color: #2196f3;
   background-color: #2196f3;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.policy__checkbox-hidden:hover + .policy__icon, .policy__checkbox-hidden:focus + .policy__icon {
+.policy__checkbox-hidden:hover + .policy__label .policy__icon, .policy__checkbox-hidden:focus + .policy__label .policy__icon {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .policy__link {
   color: #2196f3;
+}
+
+.policy__label {
+  width: 16px;
+  height: 15px;
 }
 
 .policy__span {

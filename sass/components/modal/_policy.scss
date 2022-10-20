@@ -32,14 +32,14 @@
     background-origin: border-box;
 
 
-    .policy__checkbox-hidden:checked+& {
+    .policy__checkbox-hidden:checked+.policy__label & {
         border-color: $accent-focus-color;
         background-color: $accent-focus-color;
         transform: scale(1.1);
     }
 
-    .policy__checkbox-hidden:hover+&,
-    .policy__checkbox-hidden:focus+& {
+    .policy__checkbox-hidden:hover+.policy__label &,
+    .policy__checkbox-hidden:focus+.policy__label & {
         transform: scale(1.1);
     }
 }
@@ -47,6 +47,11 @@
 .policy__link {
     color: $hyper-link-color;
 
+}
+
+.policy__label {
+    width: 16px;
+    height: 15px;
 }
 
 .policy__span {
