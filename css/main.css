@@ -1080,10 +1080,8 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .address_item:not(:last-child) {
-    margin-bottom: 5px;
-  }
+.address__item:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .address__link {

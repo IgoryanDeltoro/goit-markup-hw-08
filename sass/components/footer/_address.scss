@@ -4,9 +4,10 @@
     }
 }
 
-.address_item:not(:last-child) {
-    @include desktop {
-        margin-bottom: 5px;
+.address__item {
+    &:not(:last-child) {
+        margin-bottom: 8px;
+
     }
 }
 
