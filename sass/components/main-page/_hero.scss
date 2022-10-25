@@ -7,9 +7,9 @@
 
     background-color: $hero-bgc;
     background-image: linear-gradient($overlay-color, $overlay-color),
-        url(../images/background-img/header-mob-img-x1.jpg);
+        url(../images/background-img/header-mob-img-x1.webp);
     @include hero-responsive-image (2, 192dpi,
-        2dppx, '../images/background-img/header-mob-img-x2.jpg');
+        2dppx, '../images/background-img/header-mob-img-x2.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,9 +18,9 @@
     @include tablet {
         max-width: 768px;
         background-image: linear-gradient($overlay-color, $overlay-color),
-            url(../images/background-img/header-tab-img-1x.jpg);
+            url(../images/background-img/header-tab-img-1x.webp);
         @include hero-responsive-image (2, 192dpi,
-            2dppx, '../images/background-img/header-tab-img-2x.jpg');
+            2dppx, '../images/background-img/header-tab-img-2x.webp');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -32,9 +32,9 @@
         padding: 200px 0;
 
         background-image: linear-gradient($overlay-color, $overlay-color),
-            url(../images/background-img/header-desk-img-x1.jpg);
+            url(../images/background-img/header-desk-img-x1.webp);
         @include hero-responsive-image (2, 192dpi,
-            2dppx, '../images/background-img/header-desk-img-x2.jpg');
+            2dppx, '../images/background-img/header-desk-img-x2.webp');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
